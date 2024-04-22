@@ -1,9 +1,9 @@
 import argparse
 
-from pyv.core.auto_versionning import build_autoversioning_parser
-from pyv.core.auto_versionning import main as autoversioning_main
-from pyv.core.versionning import build_versioning_parser
-from pyv.core.versionning import main as versioning_main
+from pyv.core.auto_versioning import build_autoversioning_parser
+from pyv.core.auto_versioning import main as autoversioning_main
+from pyv.core.versioning import build_versioning_parser
+from pyv.core.versioning import main as versioning_main
 
 
 def create_parser() -> argparse.ArgumentParser:

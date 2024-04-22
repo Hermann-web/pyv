@@ -2,7 +2,7 @@
 
 pyv is a command-line interface (CLI) application for managing versioning in a using Python.
 
-It correspond to a versionning plan explained in the [versionning_plan](./docs/api-versioning-strat.md)
+It correspond to a versioning plan explained in the [versioning_plan](./docs/api-versioning-strat.md)
 
 ## Installation
 

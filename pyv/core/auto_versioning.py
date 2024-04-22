@@ -9,7 +9,7 @@ from git.exc import InvalidGitRepositoryError
 from .utils import log_on_value_error, print_function_name
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
-versionning_script_path = os.path.join(current_dir, "versionning.py")
+versioning_script_path = os.path.join(current_dir, "versioning.py")
 
 
 def is_valid_version_branch(branch_name):
@@ -46,7 +46,7 @@ def list_version_branches(repo_path):
 
 @print_function_name
 @log_on_value_error
-def auto_versionning(repo_path):
+def auto_versioning(repo_path):
     repo_path = os.path.abspath(repo_path)
     if not os.path.exists(repo_path):
         raise ValueError(f"repo_path {repo_path} doesn't exists")
@@ -72,7 +72,7 @@ def auto_versionning(repo_path):
         if last_dev_branch and last_prod_branch:
             _cmd = [
                 "python",
-                versionning_script_path,
+                versioning_script_path,
                 "--dev",
                 last_dev_branch.lower(),
                 "--prod",
@@ -121,7 +121,7 @@ def parse_args() -> argparse.Namespace:
 
 
 def main(args: argparse.Namespace):
-    auto_versionning(args.repo_path)
+    auto_versioning(args.repo_path)
 
 
 if __name__ == "__main__":
