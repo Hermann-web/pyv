@@ -2,14 +2,14 @@
 
 pyv is a command-line interface (CLI) application for managing versioning in a using Python.
 
-It correspond to a versioning plan explained in the [versioning_plan](./docs/api-versioning-strat.md)
+It correspond to a scpecific versioning plan explained in the [versioning_plan](./docs/api-versioning-strat.md). This versioning plan is compatible with the [Semantic Versioning Specification](https://semver.org/)
 
 ## Installation
 
 1. From pypi:
 
   ```bash
-  pip install pyv
+  pip install versioning-python
   ```
 
 1. Clone the repository:
