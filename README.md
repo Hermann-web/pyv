@@ -80,3 +80,7 @@ pyv auto <repo_path>
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Related works
+- https://pypi.org/project/bumpversion/
+
